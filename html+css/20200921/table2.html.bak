@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+<!--h1  p  table
+
+	align='left/center/right'
+
+
+	table 垂直排列
+
+	valign='top/middle/bottom'
+--> 
+ 
+  <table width='500px' height='500' border='1' align='center' cellspacing='10'>
+ 	<tr height='300px'>
+ 		<td  align='center'>1-1</td>
+ 		<td colspan='2' align='right'>1-2</td>
+ 	</tr>
+ 	<tr align='center'  valign='top'>
+ 		<td>2-1</td>
+		<td>haha</td>
+ 		<td rowspan='2' valign='middle'>2-2</td>
+ 	</tr>
+ 	<tr>
+ 		<td colspan='2'>3-1</td>
+ 	</tr>
+  </table>
+ </body>
+</html>

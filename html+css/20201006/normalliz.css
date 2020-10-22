@@ -1,0 +1,48 @@
+/*normalliz.css*/
+
+
+/*重置属性的css*/
+*{
+	padding:0;
+	margin:0;
+}
+li{
+	/*列表-样式:无*/
+	list-style:none;
+}
+i,em{
+	font-style:normal;
+}
+a{
+	color:#fff;
+	/*文本-修饰:无*/
+	text-decoration:none;
+}
+
+.fl{/*定义左浮动类*/
+	float:left;
+}
+
+.fr{/*定义右浮动类*/
+	float:right;
+}
+
+.w1180{/*定义内容宽度类*/
+	width:1140px !important; 
+	margin:0 auto;
+}
+
+
+
+
+
+
+/*
+标签div   权值1
+class     权值10
+id			   100
+内联(标签上写的style)     权值1000
+而!important           权值  最优先的，比其他的都大
+同样有!important的样式,按照读取代码的顺序(就近原则)
+
+*/

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	ul,dl,dt,dd{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	.sec{
+		width:200px;
+		border:1px solid black;
+		overflow:hidden;
+	}
+	.sec li{
+		float:left;
+		width:49%;
+		margin-bottom:2px;
+		margin-right:2px;
+	}
+	.sec li:nth-child(2n+1){
+		background-color:red;
+	}
+	.sec li:nth-child(2n){
+		background-color:blue;
+	}
+	.three{
+		width:200px;
+		border:1px solid black;
+		overflow:hidden;
+	}
+	.three dt a,
+	.three dd a{
+		width:49%;
+		/* display:block; */
+		float:left;/*浮动元素默认变块*/
+		text-align:center;
+		margin-right:2px;
+		margin-bottom:2px;
+	}
+	.three dt a:first-child,.three dd a:first-child{
+		background-color:red;
+	}
+	
+	.three dt a:last-child,.three dd a:last-child{
+		background-color:blue;
+	}
+  </style>
+ </head>
+ <body>
+  <ul class='sec'>
+	<li>1</li>	
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+	<li>6</li>
+	<li>7</li>
+	<li>8</li>
+	<li>9</li>
+	<li>10</li>
+	<li>11</li>
+
+  </ul>
+
+
+  <dl class='three'>
+	<dt>
+		<A>女</a>
+		<a>男</a>
+	</dt>
+	<dd>
+		<a>女士包包</a>
+		<a>男士包包</a>
+	</dd>
+  </dl>
+ </body>
+</html>

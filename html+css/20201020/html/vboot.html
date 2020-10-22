@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		#myVue {
+			position: relative;
+			height: 400px;
+			width: 830px;
+			margin: 40px auto;
+			border: 1px solid red;
+			background-color: aliceblue;
+		}
+
+		#myVue div {
+			width: 200px;
+			height: 400px;
+			transition: all 1s;
+			position: absolute;
+			display: none;
+			z-index: 1000;
+		}
+		#myVue div a{
+			display: block;
+			width:100%;
+			height:100%;
+			position:relative;
+			transition:transform .5s;
+		}
+		#myVue .little_L1 {
+			left: -100px;
+			z-index: -1;
+			width: 160px;
+			height: 320px;
+			margin-left:20px;
+			margin-top:40px;
+			display: block;
+		}
+
+		#myVue .little_L2 {
+			left: -100px;
+			z-index: -2;
+			width: 160px;
+			height: 320px;
+			margin-left:20px;
+			margin-top:40px;
+			display: block;
+		}
+
+		#myVue .little_R1 {
+			left: 730px;
+			z-index: -1;
+			width: 160px;
+			height: 320px;
+			margin-left:20px;
+			margin-top:40px;
+			display: block;
+		}
+
+		#myVue .little_R2 {
+			left: 730px;
+			z-index: -2;
+			width: 160px;
+			height: 320px;
+			margin-left:20px;
+			margin-top:40px;
+			display: block;
+		}
+
+		#myVue .big_1 {
+			left: 0;
+			display: block;
+		}
+
+		#myVue .big_2 {
+			left: 210px;
+			display: block;
+		}
+
+		#myVue .big_3 {
+			left: 420px;
+			display: block;
+		}
+
+		#myVue .big_4 {
+			left: 630px;
+			display: block;
+			/* z-index:1001; */
+		}
+	</style>
+</head>
+
+<body>
+	<div id="myVue">
+		<div class="little_L2">
+			
+		</div>
+		<div class="little_L1">
+		</div>
+		<div class="big_1">
+		</div>
+		<div class="big_2">
+		</div>
+		<div class="big_3">
+		</div>
+		<div class="big_4">
+		</div>
+		<div class="little_R1">
+		</div>
+		<div class="little_R2">
+		</div>
+	</div>
+	<button onclick="move()">gogogo</button>
+</body>
+<script type="text/javascript">
+	let rotation = {
+		classList: ['little_L2', 'little_L1', 'big_1', 'big_2', 'big_3', 'big_4', 'little_R1', 'little_R2'],
+		defList: ['a.jpg', 'b.jpg', 'c.jpg', 'd.jpg', 'e.jpg', 'f.jpg'],
+		imgList: [],
+		allItem: null,
+		interval: null,
+		computed() {
+			let _this = this
+			if (_this.defList.length <= this.classList.length) {
+				_this.imgList = _this.defList;
+			} else {
+				for (var i = 0; i < this.classList.length; i++) {
+					_this.imgList.push(_this.defList[i]);
+				}
+			}
+			if (_this.imgList.length < this.classList.length) {
+				var cloneList = _this.imgList;
+				var ind = 0;
+				while (cloneList.length < this.classList.length) {
+					if (ind >= _this.imgList.length) {
+						ind = 0
+					}
+					cloneList.push(_this.imgList[ind])
+					ind++;
+				}
+				_this.imgList = cloneList;
+			}
+		},
+		load() {
+			_this = this
+			_this.allItem = document.querySelectorAll('#myVue>div');
+			for (var x = 0; x < _this.allItem.length; x++) {
+				var item = _this.allItem[x];
+				console.log(item)
+				console.log(_this.classList)
+				item.innerHTML = `<a href="#"><img src="../images/${_this.imgList[x]}" /></a>`
+				item.className = _this.classList[x];
+			}
+		},
+		move() {
+			_this = this
+			// classList.push(classList.shift());
+			_this.classList.unshift(_this.classList.pop());
+			console.log(_this.classList)
+			for (var x = 0; x < _this.allItem.length; x++) {
+				var item = _this.allItem[x];
+				item.innerHTML = `<a href="#"><img src='../images/${_this.imgList[x]}' /></a>`
+				item.className = _this.classList[x];
+			}
+		},
+		start() {
+			let _this = this
+			_this.computed()
+			_this.load()
+			_this.handl()
+			_this.add()
+		},
+		add() {
+			_this.interval = setInterval(() => {
+				_this.move()
+			}, 2000)
+		},
+		remove() {
+			let _this = this
+			clearInterval(_this.interval)
+		},
+		handl() {
+			let _this = this
+			for(let i = 0 ; i < _this.allItem.length ; i++){
+				let item = _this.allItem[i];
+				item.addEventListener("mouseover", () => {
+					_this.remove();
+					item.querySelector('a').style.WebkitTransform = "scale(1.1) rotateY(180deg)"
+					item.querySelector('a').style.zIndex = '3000';
+				} )
+				item.addEventListener("mouseout", () => {
+					_this.add()
+					item.querySelector('a').style.WebkitTransform = "scale(1) rotateY(0)"
+					item.querySelector('a').style.zIndex = ''
+				})
+			}
+		}
+	}
+	rotation.start()
+</script>
+
+</html>

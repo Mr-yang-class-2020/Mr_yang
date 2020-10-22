@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ol.html(有序列表)</title>
+ </head>
+ <body>
+	<!--
+		有序列表 ol  默认序列号的起始值为1
+		我们可以通过为ol标签设置start属性改变起始值
+		
+	-->
+
+  <ol>
+	<li>100</li>
+	<li>200</li>
+	<li>300</li>
+	<li>400</li>
+  </ol>
+
+  
+  <ol start="5">
+	<li>500</li>
+	<li>600</li>
+	<li>700</li>
+	<li>800</li>
+  </ol>
+
+
+  <ol reversed type='a'>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+	<li>d</li>
+  </ol>
+  <ol reversed type='A'>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+	<li>d</li>
+  </ol>
+  <ol reversed type='i'>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+	<li>d</li>
+  </ol>
+ </body>
+</html>

@@ -1,0 +1,28 @@
+/* normalliz.css */
+
+*{
+    margin: 0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.w960{
+    width: 960px;
+    margin: auto;
+    background-color:white;
+}
+body{
+    background-color:#ededeb;
+}

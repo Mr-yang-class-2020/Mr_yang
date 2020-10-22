@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalliz.css" type='text/css'>
+    <link rel="stylesheet" href="../css/index.css" type='text/css'>
+</head>
+
+<body>
+    <!--vscode-->
+    <div id="" class='w960'>
+        <div id="header">
+            <div class='logo fl'>
+                <a href=''>
+                    <span>SUN</span>ENERGY
+                </a>
+            </div>
+            <div class='search fr'>
+                <input type="text" placeholder="请输入搜索关键字">
+                <input type='button' value='搜索'>
+            </div>
+        </div>
+
+        <div id="nav">
+            <ul class="nav">
+                <li class='active'>
+                    <a href="#">001</a>
+                </li>
+                <li><a href="#">002</a></li>
+                <li><a href="#">003</a></li>
+                <li><a href="#">004</a></li>
+                <li><a href="#">005</a></li>
+                <li><a href="#">006</a></li>
+                <li><a href="#">007</a></li>
+                <li><a href="#">008</a></li>
+            </ul>
+        </div>
+
+        <div id="banner" class='w960'>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/a.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/b.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/c.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+            <div class='round'>
+                <a class='active'></a>
+                <a></a>
+                <a></a>
+            </div>
+        </div>
+        <div id="content">
+            内容
+        </div>
+
+        <div id="footer">
+            页脚
+        </div>
+    </div>
+
+</body>
+
+</html>

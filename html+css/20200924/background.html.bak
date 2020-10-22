@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	div{
+		width:100%;
+		height:2000px;
+		border:3px solid red;
+		/* background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600920943157&di=415156dfabc30cc9db0056e008ff8dec&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F14%2F75%2F01300000164186121366756803686.jpg); */
+		/*设置背景图不重复*/
+		/* background-repeat:no-repeat; */
+		/*调整背景图片位置*/
+		/* background-position:center; */
+		/*背景图片大小*/
+		/* background-size:100% 100%; */
+		/* background-size:cover; */
+		background-size:60% 30%;
+		/* background-color:pink; */	
+
+		background:red url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600920943157&di=415156dfabc30cc9db0056e008ff8dec&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F14%2F75%2F01300000164186121366756803686.jpg) no-repeat center;
+	}
+  </style>
+ </head>
+ <body>
+	<div>
+	
+	</div>
+
+
+  <img src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1600920943157&di=415156dfabc30cc9db0056e008ff8dec&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F14%2F75%2F01300000164186121366756803686.jpg'>
+
+
+
+  
+ </body>
+</html>

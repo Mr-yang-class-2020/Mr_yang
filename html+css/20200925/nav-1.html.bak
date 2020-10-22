@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>导航制作</title>
+		<style>
+			/*重置属性---先把所有标签的默认属性值，都清除掉。
+			在添加上指定的数值
+			*/
+			/* 
+			标签选择器 h1 div p 标签的名字
+			类选择器 class
+			id选择器 id
+			通用选择器 * 代表所有标签
+			一般情况下，一些IT类公司 是不使用* 来重置样式的
+
+			一般公司都是使用哪些标签，就清除哪些标签的默认样式。不使用的标签不去做清理
+			*/
+			
+			*{/*通用方式去掉属性*/
+				margin:0;
+				padding:0;
+			}
+			a{
+			/*文本-修饰:无*/
+				text-decoration:none;
+			}
+			li{/*css列表*/
+				/*列表-样式-类型:无*/
+				list-style-type:none;	
+			}
+			.fl{/*左浮动类*/
+				float:left;
+			}
+			.fr{/*右浮动类*/
+				float:right;
+			}
+
+
+/*-----------正常修饰部分-------------*/
+			#nav-box{
+				/* margin-left:auto;
+				margin-right:auto; */
+				margin: 30px auto 0;
+				width:1000px;
+				border:1px solid black;
+				background-color:green;
+				/* overflow:hidden; */
+				height:30px;
+				/*针对于文字设置的属性，子元素可以继承*/
+				line-height:30px;
+				color:white;
+				font-size:14px;
+			}
+			/*修饰全部分类*/
+			#nav-box .cartgory{
+				width:184px;
+				padding-left:16px;
+				font-size:18px;
+				background-color:#317fe3;
+			}
+			/*修饰菜单导航下的li*/
+			#nav-box .menu-nav li{
+				float:left;
+				width:99px;
+				border-left:1px solid transparent;
+				border-right:1px solid transparent;
+				text-align:center;
+			}
+			#nav-box .menu-nav li a{
+				color:white;
+			}
+			/*修饰叫index的li*/
+			#nav-box .menu-nav li.index{
+				background-color:#ffb901;
+				border-color:#fff;
+			}
+
+			/*鼠标悬停效果*/
+			#nav-box .menu-nav li:hover{
+				background-color:gray;
+			}
+
+
+
+
+			/*其他测试效果*/
+			#nav-box .menu-nav li p{
+				display:none;
+			}
+			#nav-box .menu-nav li a:hover+p{
+				/* display:block */
+			}
+			.haha{
+				height:300px;
+				border:2px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			在制作网页的时候，大部分跟列表有关系的地方。基本都使用ul/ol/dl去制作
+		-->  
+		
+ 		<div id='nav-box'>
+			<div class='fl cartgory'>
+				全部商品分类
+			</div>
+			<ul class='menu-nav fl'>
+				<li class='avtive index'>
+					<a href='#'>首页</a>
+					<p>哈哈哈哈</p>
+				</li>
+				<li><a href='#'>QQ网购</a></li>
+				<li><a href='#'>装机宝</a></li>
+				<li><a href='#'>早市</a></li>
+				<li><a href='#'>天黑黑</a></li>
+				<li><a href='#'>二手特卖</a></li>
+				<li><a href='#'>团购</a></li>
+			</ul>
+		</div>
+ 
+ 
+		<div class='haha'>
+		
+		
+		</div>
+ 
+ 
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+	<!--
+		align----只能用于修饰文字  在h1和p标签内
+		align   排列
+		center  中间
+		left	左侧(默认值)
+		right	右侧
+
+		width这个属性 不能应用在除了img/table以外的标签上
+
+		如果其他标签想改变宽度和高度，此时只能使用style样式进行修改(注意:对于a,b,i,u,ing,em,sub,sup等行内标签是不能直接用style进行宽高修饰的)
+
+		h1 h2 h3 h4 h5 h6 
+	-->
+  <h1 align="center" width="80%" style="width:70%;">
+	网页的默认像素大小为 16px，h1永远都是默认像素的2倍
+  </h1>
+
+  <a href='' style='width:100%;display:block;'>我是一个a</a>
+ </body>
+</html>

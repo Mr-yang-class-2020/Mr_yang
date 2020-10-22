@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>position定位+border的使用</title>
+  <style>
+  
+	body{
+	 height:5000px;
+	 background:--webkit--linear-gradient(bottom,red,blue);
+	 background:linear-gradient(to bottom,red,blue);
+	}
+	.red{
+		width:0px;
+		height:0px;
+		border:20px solid black;
+		border-left-color:red;
+		border-right-color:blue;
+		border-top-color:pink;
+	}
+	.green{
+		width:0px;
+		height:0px;
+		border:20px solid transparent;
+		border-left-color:red;
+	}
+	.pos{
+		width:200px;
+		height:200px;
+		background-color:pink;
+		position:fixed;
+		left:0;
+		top:50%;
+		left:80%;
+	}
+	.relative{
+		width:800px;
+		height:300px;
+		background:white;
+		/*如果把定位注销掉，则class=fl的子元素，定位位置按照body的位置移动*/
+		position:relative;
+		top:200px;
+		left:50px;
+	}
+	h1{
+		background:white;
+	}
+	.fl{
+		width:50px;
+		height:50px;
+		background:gray;
+		/*浮动做垂直居中时，不能按照指定的高度自动变化居中*/
+		/* float:right;
+		margin-top:75px; */
+		/*如果我们向自动的根据高度变化居中，则使用position*/
+		position:absolute;
+		left:50%;
+		top:50%;
+		/* margin-left:-25px;
+		margin-top:-25px; */
+		transform:translate(-50%,-50%);
+	}
+	.round{
+		width:100px;
+		height:100px;
+		background-color:white;
+		margin:500px auto;
+		border-radius:50%;
+		position:relative;
+	}
+	.round::before , .round::after{/*在内容之前*//*在内容之后*/
+		content:"";
+		border:30px solid transparent;
+		display:block;
+		width:0;
+		border-left-color:blue;
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-25%,-50%);
+	}
+	.round::after{
+		transform:translate(-45%,-50%);
+		border-left-color:white;
+	}
+	a{
+		background-color:white;
+	}
+  </style>
+ </head>
+ <body>
+	<!--用border做一个三角形-->
+
+	<div class='red'>
+	
+	</div>
+	
+	<div class='green'>
+	
+	</div>
+
+
+
+	<div class='pos'>
+		固定定位fixed
+		<div class='fl'>
+			绝对定位
+		</div>
+	</div>
+	
+	<div class='relative'>
+		相对定位relative
+		<div class='fl '>
+		float
+		</div>
+		<h2>哈哈哈哈哈</h2>
+	</div>
+	<h1>
+		这是一个标题
+	</h1>
+
+
+	<div class='round'>
+	</div>
+
+	<a>我时AAA</a>
+
+ </body>
+</html>

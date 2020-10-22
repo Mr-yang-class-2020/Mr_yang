@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>demo1.html</title>
+ </head>
+ <body>
+	<h1 align='center'>自我介绍</h1>
+	<hr/>
+	<ul>
+		<li><h3><a href="#self">个人介绍</a></h3></li>
+		<li><h3><a href="">我的家庭</a></h3></li>
+		<li><h3><a href="">我的同桌(朋友/室友)</a></h3></li>
+		<li><h3><a href="">我的学校</a></h3></li>
+	</ul>
+
+	<hr/>
+	<img src='./images/1.jpg' width='100%'>
+
+	<hr>
+	
+	<h2><a name='self'>一、个人介绍</a></h2>
+	<p>
+		姓名:MR.yang  <br>
+		性别:你应该能看到<br>
+		年龄:比你们大一旬 ++<br>
+		电话:18614052505<br>
+		....
+	</p>
+
+	<img src='' alt="放一张自己的图片">
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<h2 align='right'> 返回顶部</h2>
+	<!---
+		images文件夹是专门用于前端页面存储图片使用的
+	--->
+ </body>
+</html>

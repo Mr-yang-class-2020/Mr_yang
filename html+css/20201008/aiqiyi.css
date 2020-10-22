@@ -1,0 +1,324 @@
+/*aiqiyi.css 修饰*/
+
+
+html{
+	/*为网页设置基础像素值*/
+	font-size:10px;
+}
+
+body{
+	background-color:#dcdcdc;
+	/*相对于html设置的基础像素值为基础值，1rem = 10px*/
+	font-size:1.2rem;
+	color:white;
+}
+#header_box{
+	position:relative;
+}
+#header{
+	background-color:blue;
+	height:64px;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	z-index:200;
+}
+/*---------------------------banner大图-------------------*/
+#banner_box{
+	/*用来给swiper做定位的*/
+	position:relative;
+}
+
+
+#banner_box ul{
+	/*用来给ul>li  做定位的*/
+	position:relative;
+	height:600px;
+}
+#banner_box ul li{
+	/*找父元素*/
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	display:none;
+}
+#banner_box ul li.show{
+	display:block;
+}
+#banner_box ul li a{
+	display:block;
+	/*为了给a的伪类做定位*/
+	position:relative;
+}
+/*为banner区域的大图 设置一个渐变的遮罩。上下为黑色。中间为透明*/
+#banner_box ul li a:before{
+	content:"";
+	display:block;
+	width:100%;
+	height:100%;
+	/*找父元素a*/
+	position:absolute;
+	top:0;
+	left:0;
+	background-image:-webkit-linear-gradient(top,red 0 , transparent 20%,transparent 80%,red 100%);
+}
+#banner_box ul li a:after{
+	/*在伪类中是可以使用url 插入图片的*/
+	/* content:url('./images/a.jpg'); */
+	content:'';
+	display:block;
+	width:300px;
+	height:150px;
+	position:absolute;
+	left:3%;
+	bottom:15%;
+	background:url(./images/a.jpg) no-repeat;
+	/*调整背景图片大小为盒子大小*/
+	background-size:cover;
+	border:2px solid white;
+}
+
+#banner_box ul li:nth-child(2) a:after{
+	background-image:url(./images/b.jpg)
+}
+#banner_box ul li:nth-child(3) a:after{
+	background-image:url(./images/c.jpg)
+}
+#banner_box ul li:nth-child(4) a:after{
+	background-image:url(./images/d.jpg)
+}
+#banner_box ul li img{
+	width:100%;
+	height:600px;
+}
+
+/*-------------------banner-轮播--------------------*/
+
+#banner_box div.swiper{
+	position:absolute;
+	top:15%;
+	right:8%;
+	width:218px;
+	padding:0 36px;
+	/* border:1px solid white; */
+}
+#banner_box div.swiper .swiper_box{	
+	position:relative;
+}
+#banner_box div.swiper img.vip-logo{
+	position:absolute;
+	left:50%;
+	top:-60px;
+	/*定位后，图片的位置。正好和父元素的中间对齐。所以需要调整图片的位置*/
+	/*通过位移。让图片左移50%的宽度*/
+	-webkit-transform:translateX(-50%);
+}
+#banner_box div.swiper .swiper_box div{
+	width:30px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	font-size:26px;
+	background-color:rgba(255,255,255,.5);
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	cursor:pointer;
+	color:black;
+	border-radius:15px;
+}
+#banner_box div.swiper .swiper_box div.left{
+	left:-36px;
+}
+#banner_box div.swiper .swiper_box div.right{
+	right:-36px;
+}
+#banner_box div.swiper .swiper_box div:hover{
+	background-color:rgba(255,255,255,1)
+}
+
+#banner_box div ol{
+	height:240px;
+	position:relative;
+}
+#banner_box div ol li{
+	width:80%;
+	/*调整轮播图图片的位置前后叠加的顺序关系。*/
+	position:absolute;
+
+}
+#banner_box div ol li:nth-child(1){
+	z-index:100;
+	opacity:1;
+	left:0;
+}
+#banner_box div ol li:nth-child(2){
+	z-index:99;
+	left:30px;
+	/*scale(x,y) 宽高等比缩放 */
+	-webkit-transform:scale(.8);
+	/*opacity 透明度  0透明 1不透明       ie不识别此属性*/
+	opacity:0.66;
+	/*filter 中透明度的值 为 0~100   0为透明  100不透明 */
+	filter:opacity(66);
+}
+#banner_box div ol li:nth-child(3){
+	z-index:98;
+	left:60px;
+	-webkit-transform:scale(.6);
+	opacity:0.33;
+}
+#banner_box div ol li:nth-child(4){
+	z-index:97;
+	left:90px;
+	-webkit-transform:scale(.4);
+	opacity:0;
+}
+#banner_box div ol li img{
+	width:100%;
+	height:240px;
+}
+
+
+/*-------------nav-box------------*/
+#nav_box{
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:60px;
+}
+#nav_box ul.nav li{
+	margin:0 23px;
+	float:left;
+	text-align:center;
+	position:relative;
+}
+#nav_box ul.nav li.item div.nav-text>a {
+	display:block;
+	position:relative;
+	font-size:18px;
+}
+#nav_box ul.nav li.item div.nav-text>a span:first-child{
+	display:block;
+	color:transparent;
+	background-image:-webkit-linear-gradient(top,rgba(255,255,255,0.4),transparent 80%);
+	-webkit-background-clip:text;
+}
+#nav_box ul.nav li.item div.nav-text>a span:last-child{
+	position:absolute;
+	font-weight:bold;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	top:-8px;
+	white-space:nowrap;
+}
+/*a上面的小三角*/
+#nav_box ul.nav li.item div.nav-text>a span:last-child::after{
+	content:'';
+	display:block;
+	width:0;
+	line-height:0;
+	border:10px solid transparent;
+	border-top-color:rgba(0,0,0,0.7);
+	position:absolute;
+	left:50%;
+	-webkit-transform:translateX(-50%);
+	top:-8px;
+	opacity:0;
+	-webkit-transition:opacity 0.5s;
+}
+/*-----------nav区域隐藏的元素 -------------- */
+
+#nav_box ul.nav li.item div.nav-text div.nav-shows{
+	width:300px;
+	height:150px;
+	position:absolute;
+	background-color:rgba(0,0,0,0.7);
+	left:50%;
+	margin-left:-30px;
+	top:-165px;
+	/* display:none; */
+	-webkit-transform:scale(0);
+	/*调整transform的基准点 x0,y0 点,默认的 0,0点在形状的中间*/
+	-webkit-transform-origin:left bottom;
+	-webkit-transition:transform 0.5s;
+}
+/*----------------nav鼠标悬停效果-----------------*/
+#nav_box ul.nav li:hover div:first-child{
+	/*
+		transition  过度   从一种状态到另一种状态 需要的时间
+		all 代表所有属性变化都执行过度
+		也可以单独的指某一个属性变化
+	*/
+	/* -webkit-transition:all .5s; */	
+	-webkit-transition:transform .5s;
+	-webkit-transform:scale(1.2);
+}
+/*鼠标移入a的时候 2个span 变色*/
+#nav_box ul.nav li.item div.nav-text>a:hover span:first-child{
+	background-image:-webkit-linear-gradient(top,rgba(0,255,0,0.4),transparent 80%);
+}
+#nav_box ul.nav li.item div.nav-text>a:hover span:last-child{
+	color:green;
+}
+#nav_box ul.nav li.item div.nav-text>a:hover span:last-child:after{
+	opacity:1;
+}
+#nav_box ul.nav li.item div.nav-text>a:hover+div.nav-shows{
+	display:block;
+	-webkit-transform:scale(1);
+}
+/*
+	注意：在css中做鼠标移入移出效果的时候，移入当前元素，只能让其子元素 或者兄弟元素发生对应的事件
+*/
+
+
+
+
+
+/*控制2个a变颜色。移入谁 谁变色*/
+#nav_box ul.nav li.item div.nav-text div:last-child a:hover{
+	color:green;
+}
+
+#nav_box ul.nav li.item div.nav-text>a:hover+div.nav-shows p{
+	padding-top:15px;
+	-webkit-transition:padding 0.5s 1s;
+}
+
+
+
+
+
+
+/*-----------------------------渐变文字-------------------*/
+
+.test{
+	width:1086px;
+	margin:50px auto;
+	text-align:center;
+	font-size:100px;
+	font-weight:bold;
+}
+.test1{
+	color:transparent;
+	/*仅谷歌浏览器可见*/
+	/*-谷歌兼容-文本-描边:2px  红色*/
+	-webkit-text-stroke:2px red;
+	/* text-shadow:2px 2px 2px blue; */
+}
+.test2{
+	/*-谷歌兼容-文本-填充-颜色:蓝色*/
+	background-image:-webkit-linear-gradient(top,red,blue);
+	/*仅谷歌浏览器可见*/
+	-webkit-background-clip:text;
+	/* -webkit-text-fill-color:transparent; */
+	color:transparent;
+}
+
+
+
+

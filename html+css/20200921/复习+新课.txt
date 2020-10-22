@@ -1,0 +1,17 @@
+h1-h6	algin='left/center/right'
+img	src='' alt='' width='' height='' title 
+a  href='' name=''
+p  algin='left/center/right'
+ul-li   type='square/disc/circle'
+ol-li	type='1/a/A/i/I' start='数字'
+dl-dt+dd
+
+表格
+
+table  表格
+     tr  行
+       td  单元格
+
+
+
+

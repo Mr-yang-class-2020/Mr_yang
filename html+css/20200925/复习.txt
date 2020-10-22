@@ -1,0 +1,35 @@
+
+content
+	width
+		min-width
+		max-width
+	height
+padding
+
+border
+
+margin
+
+
+盒模型有那几个？
+width  height  padding border  margin
+
+
+
+background
+
+
+background-image:url
+
+
+float
+
+
+
+
+
+
+
+
+
+

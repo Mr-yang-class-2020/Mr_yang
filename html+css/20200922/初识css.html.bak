@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	h1{
+		/*属性:值;*/
+		text-align:right;
+		/* color:blue; */
+		/* color:#00f; */
+		color:rgb(0,0,255);
+		font-weight:normal;
+		text-decoration:line-through;
+		text-shadow:0 0 2px black;
+		color:transparent;
+		/* white-space:pre; */
+		/*文本溢出隐藏*/
+		/* text-overflow:ellipsis; */
+		/*盒子内容溢出隐藏*/
+		/* overflow:hidden; */
+		word-spacing:20px;
+	}
+	p{
+		font-size:12px;
+		text-indent:24px;
+	}
+  </style>
+ </head>
+ <body>
+  <h1 >标题0</h1>
+  <h1 style='text-align:center;color:red;'>标题1</h1>
+  <h1 >标题2</h1>  
+  <h1 >
+  标题3   标题3  标题3  标题3  标题3  标题3  标题3  标题3 标题3 标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3标题3
+  <br>
+  this is a sunny day!!
+  </h1>
+
+	<p>	
+		标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quod tenetur expedita ad voluptate optio. Libero maxime fuga velit sequi, dolores ab, quis facilis doloribus quisquam provident quia ipsa explicabo!
+	</p>
+	<p style='text-indent:24px'>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium hic omnis nemo tenetur perferendis eaque in, repellat nobis enim voluptatibus libero. Quaerat nostrum quasi ipsam! Commodi nostrum nobis omnis consequuntur?
+	</p>
+	
+ </body>
+</html>

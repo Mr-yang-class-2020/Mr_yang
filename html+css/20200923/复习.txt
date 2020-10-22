@@ -1,0 +1,43 @@
+复习:
+ 经常用到
+	font-size	字体大小
+	font-weight	字体加粗
+	font-style	字体样式
+	line-height	行高
+	text-align	文本排列
+	text-decoration	文本修饰
+	color		颜色
+
+ 偶尔用到
+	write-space     空白处理
+	text-overflow	文本溢出
+	text-indent	文本缩进
+ 基本不用
+	word-spacing	字体间距
+
+
+	width:
+	height:
+
+
+	background-color:
+	背景颜色
+	背景图片
+	背景重复
+	背景大小(拉伸)
+	背景位置
+
+	border:  四个边都有边框
+
+	border-right:大小 颜色 样式
+	border-left:大小 颜色 样式
+	border-bottom:大小 颜色 样式
+	border-top:大小 颜色 样式
+
+	border-color:
+	border-width:
+	border-style:
+
+	border-right-color
+	border-left-width
+	border-top-style

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	h1{
+		font-weight:normal;
+	}
+	.a1{
+		font-size:20px;
+	}
+	.a2{
+		font-size:40px;
+	}
+	.div1{
+		width:500px; /*宽度*/
+		height:200px;/*高度*/
+		background-color:rgba(250,0,0,1);
+		/*背景-颜色:红色*/
+		color:white;
+	}
+	.div2{
+		font-size:20px;
+	}
+	.div3{
+		font-size:40px;
+	}
+	#div2{
+		border:5px solid black;
+		/*边框:5像素 实线 黑色*/
+	}
+	#div3{
+		border:5px solid blue;
+	}
+	#div2.div2{/*100+10  110*/
+		border:20px dashed black;
+	}
+	#div3{
+		border:20px solid blue;
+	}
+	#div2{/*100*/
+		border:40px solid black;
+	}
+  </style>
+ </head>
+ <body>
+	<h1 class='a1'>第一个标题</h1>
+	<h1 class='a2'>第二个标题</h1>
+	<h1 class='a1'>第一个标题</h1>
+
+	<!--搭建页面结构的块元素-->
+	<div class='div1 div2' id='div2'>
+		<h1>第一个盒子中的h1</h1>
+	</div>
+	<div class='div1 div3' id='div3'>
+		<h1>第二个盒子中的h1</h1>
+	</div>
+	<div>
+		<h1>第二个盒子中的h1</h1>
+	</div>
+ </body>
+</html>

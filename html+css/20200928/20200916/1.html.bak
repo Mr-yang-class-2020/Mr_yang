@@ -1,0 +1,72 @@
+<!-- 叹号 的意思是声明   
+	doc		文档
+	type	类型
+    html    超文本标记语言
+-->
+<!doctype html>  
+
+<!-- xml   svg  jpeg png gif icon  .php   .sql  .vue  .js  --> 
+
+<html lang="en">
+	<head>
+		<!--charset字符集  如果在打开页面后，发现中文文字都是乱码的情况下，一定是编码格式不正确  -->
+		<meta charset="UTF-8" />
+		<meta name="Generator" content="EditPlus®">
+		<!--author  作者信息-->
+		<meta name="Author" content="">
+		<!--Keywords 关键字，用于指定网页被搜索的关键字-->
+		<meta name="Keywords" content="">
+		<!--title  标题-->
+		<title>哈哈,这是我接触的第一个前端页面</title>
+	</head>
+	<body>
+		我是页面主体文字部分
+		<!-- 视频
+		音频 -->
+	
+		<!--
+			url  统一资源定位器    
+			
+			---路径
+				绝对路径   https://www.baidu.com
+				相对路径
+					./		当前目录
+					../		上一级目录
+		    src   
+			href
+		
+		-->
+		图片	
+		<img src="./1.png" alt="图片连接出错，或者位置不对" style="color:red;" width="100px" />
+		<!--
+			img标记的属性
+				src		用来连接图片，写图片的路径地址
+				alt		在图片连接错误的情况下，图片位置会显示alt内的文字
+				style	修饰/样式
+				width	宽度
+				height  高度
+		-->
+
+		<!-- px em rem 
+		vh vw   css3内新增的单位
+		cm pt %
+		
+		
+		默认情况下 1em = 1rem = 16px 
+		因为网页中默认的文字大小为16px
+		-->
+
+		文字
+		页面跳转连接
+	
+		<hr/>
+		<img src="./1.png" alt="图片连接出错，或者位置不对" style="color:red;" width="50%" title="这是一张图" />
+		<img src="./1.png" alt="图片连接出错，或者位置不对" style="color:red;" width="50%" title="这是一张图" />
+
+		<!--
+			img 标签  属于单标签/单标记
+			          还属于 行内块级标签
+		-->
+			
+	</BODY>
+</html>

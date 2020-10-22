@@ -1,0 +1,139 @@
+
+
+body{
+    background:url(../images/body-bj_03.png) repeat-x #eeeeee;
+
+}
+.header-box{
+    /* padding-top:38px; */
+    /* height:222px; */
+    height:260px;
+    background: url(../images/header-bj_03.png);
+}
+#header{
+    padding-top:38px;
+}
+#header ul.nav{
+    padding-left:32px;
+    background-color:#a61404;
+    height:48px;
+    line-height:48px;
+    font-size:12px;
+}
+#header ul.nav li{
+    width:89px;
+    float: left;
+    background: url(../images/nav-border_07.png) no-repeat left center;
+    text-align: center;
+    height:inherit;
+}
+#header ul.nav li a{
+    display:block;
+    position:relative;
+}
+#header ul.nav li:first-child{
+    background: none;
+}
+#header ul.nav li:hover{
+    background: none;
+}
+#header ul.nav li:hover a{
+    line-height:34px;
+    padding-top:4px;
+    background:url(../images/nav-hover.png) no-repeat right top;
+    top:-4px;
+}
+
+#header .banner{
+    height:174px;
+    background-color: green;
+}
+
+
+
+
+/*******************************************************/
+
+#content-box{
+    padding-top:17px;
+}
+#content-box .left{
+    width: 190px;
+    margin-left:14px;
+    background-color:pink;
+}
+#content-box .left dt{
+    background:-webkit-linear-gradient( -45deg ,#e2e2e2 70% , #d8d8d8 100% );
+    line-height:28px;
+    position:relative;
+    margin-bottom:3px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+#content-box .left dt span{
+    display: block;
+    background:url(../images/content-title-bj_07.png) no-repeat left center;
+    padding-left:7px;
+    color:#fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+#content-box .left dt a{
+    font-size:12px;
+    position: absolute;
+    left:10px;
+    top:0;
+    width: 137px;
+    text-align:center;
+    background:url(../images/content-title-bj_08.png) no-repeat left top
+}
+#content-box .left dl.yewu{
+    margin-bottom:20px;
+}
+
+#content-box .left dl.yewu dd{
+    border-radius: 4px;
+    background-color: #333;
+    line-height:28px;
+    margin-bottom:1px;
+    font-size:12px;
+    padding-left:21px;
+    overflow-x:hidden ;
+    position: relative;
+}
+#content-box .left dl.yewu dd:before{
+    content: url(../images/sanjiao_07.png);
+    position: absolute;
+    left:7px;
+}
+#content-box .left dl.yewu dd a{
+    display: block;
+    background-color:red;
+    border-left:1px solid #fff;
+    padding-left:42px;
+}
+#content-box .left dl.category dd{
+    border:1px solid black;
+    font-size:12px;
+    line-height:38px;
+    padding-left:62px;
+}
+
+#content-box .left dl.category dd:not(:last-child){
+    border-bottom:none;
+}
+
+
+
+#content-box .center{
+    width: 440px;
+    margin-left: 16px;
+    height:500px;
+    background-color:green;
+}
+#content-box .right{
+    width: 259px;
+    height: 500px;
+    margin-right:15px;
+    background-color: lightgreen;
+}

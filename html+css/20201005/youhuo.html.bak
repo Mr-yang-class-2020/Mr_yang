@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Generator" content="EditPlus®">
+		<meta name="Author" content="">
+		<meta name="Keywords" content="">
+		<meta name="Description" content="">
+		<title>有货</title>
+		<!--
+		css的第三种连接方式
+		1/内部     <style></style>
+		2/内联/内嵌   <h1 style='color:red;'></h1>
+		3/外联/外部	<link href='' rel='关联类型'  type='类型'>
+			link 连接的文件xxx,关联类型是 stylesheet(样式表),样式表的类型是(text/css)css文本
+		-->
+		<link href='./normalliz.css' rel='stylesheet' type='text/css'>
+		<link href='./yohuo.css' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id='nav_box'>
+			<ul>
+				<li class='none'><a href=''>首页</a></li>
+				<li><a href=''>上装</a></li>
+				<li><a href=''>裤子</a></li>
+				<li><a href=''>鞋</a></li>
+				<li><a href=''>包</a></li>
+				<li><a href=''>内衣</a></li>
+				<li><a href=''>外套</a></li>
+				<li><a href=''>配饰</a></li>
+				<li><a href=''>裙子</a></li>
+				<li><a href=''>化妆品</a></li>
+				<li><a href=''>家居生活</a></li>
+				<li><a href=''>OUTLET</a></li>
+				<li><a href=''>潮品型录</a></li>
+			</ul>
+			<ol>
+				<li><a href=''>T恤</a></li>				
+				<li><a href=''>衬衫</a></li>
+				<li><a href=''>内衣</a></li>
+				<li><a href=''>短裤</a></li>
+				<li><a href=''>凉鞋</a></li>
+				<li><a href=''>休闲裤</a></li>
+				<li><a href=''>牛仔裤</a></li>
+				<li><a href=''>双肩包</a></li>
+				<li><a href=''>单肩挎包</a></li>
+				<li><a href=''>手表</a></li>
+				<li><a href=''>眼镜</a></li>
+			</ol>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,183 @@
+/*首页css文件*/
+
+#header{
+    height: 104px;
+    background-color: pink;
+}
+#nav{
+    height: 50px;
+    background-color:#2e2e2e;
+    line-height:50px;
+    font-size:12px;
+    text-align:center;
+}
+#nav li{
+    float:left;
+    width:120px;
+}
+#nav li a{
+    display:block;
+    border-right:1px dotted #bbb;
+}
+#nav li:last-child a{
+    display:block;
+    border-right:none;
+}
+
+/* 导航的悬停事件 */
+#nav li.active a{
+    background-color:#00a56e;
+    background-clip: padding-box;
+}
+
+
+#banner{
+    /* width:960px; */
+    margin-top:10px;
+    background-color: pink;
+    overflow:hidden ;
+    padding-bottom:38px;
+    position: relative;
+}
+/*需要把3张图隐藏，然后第一张图显示*/
+#banner ul {
+    width:300%;
+}
+#banner ul li{
+    /* width:33.3333%; */
+    width:960px;
+    float:left;
+}
+#banner ul li a{
+    /*变块的元素的宽度默认等于父元素的宽度*/
+    display:block;
+}
+#banner ul li a img{
+    width:100%; /*960px*/
+}
+#banner .round{
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+#banner .round a{
+    float:left;
+    width:20px;
+    height: 20px;
+    border-radius:10px;
+    background-color:white;
+    margin:0 5px; 
+}
+
+#banner .round a.active{
+    background-color:red; 
+}
+
+
+
+#content{   
+    height: 600px;
+    background-color: gray;
+}
+#content .left{
+    width: 199px;
+    background-color: #f0f0f0;
+    height:100%;
+}
+#content h3{
+    padding-left:18px;
+    padding-top:4px;
+    line-height:36px;
+    color:#fff;
+    font-size:12px;
+    background:#2e2e2e url('../images/content-title-bj_03.png') left top no-repeat;
+}
+
+#content .left .cartgory ul{
+    padding:18px 0 35px 12px;
+}
+#content .left .cartgory ul li{
+    line-height:30px;
+    font-size:12px;
+    height:29px;
+    border-bottom:1px solid black; 
+    padding-left:52px;   
+    position:relative;
+}
+/* #content .left .cartgory ul li::before{
+    display: block;
+    width:5px;
+    height:5px;
+    line-height:0;
+    content:"";
+    border:3px solid rgba(0,0,0,.3);
+    border-radius:50%;
+    position:absolute;
+    left:0;top:0;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+    left:6px;
+} */
+#content .left .cartgory ul li span{
+    width:5px;
+    height: 5px;
+    display:block;
+    border:3px solid rgba(0,0,0,.3);
+    line-height:0;
+    position:absolute;
+    border-radius:50%;
+    left:6px;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+
+#content .left .cartgory ul li a{
+    color:#000;
+}
+
+/* #content .left .cartgory ul li:hover::before{
+    border-color:red;
+} */
+#content .left .cartgory ul li:hover span{
+    border-color:red;
+}
+#content .left .cartgory ul li:hover a{
+    color:red;
+}
+
+
+
+#content .right{
+    width: 760px;
+    height:100%;
+    background-color: #fff;
+}
+#content .right h3:after,
+#content .right h3 a{
+    content:"MORE > > >";
+    font-size:10px;
+    -webkit-transform:scale(0.5);
+    transform: scale(0.5);
+    display: block;
+    float:right;
+    margin-right:20px;
+    background-color:green;
+}
+
+
+#footer{
+    height: 130px;
+    background-color: pink;
+}
+
+
+
+
+
+/* div::before   在div内容之前
+h3::after    在h3内容之后
+a::after    在h3内容之后 */

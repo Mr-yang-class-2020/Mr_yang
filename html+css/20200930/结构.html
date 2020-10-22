@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+	.fl{
+		float:left;
+	}
+
+	body{
+		height:5000px;
+	}
+	nav{
+		width:1000px;
+		height:30px;
+		border:1px solid red;
+		margin:0 auto;
+	}
+	.nav1 .left{
+		width:200px;
+		border:1px solid black;
+	}
+	.nav1 ul{
+		width:600px;
+		border:1px solid black;
+		margin-left:50px;
+	}
+	div.banner_box1{
+		width:1000px;
+		height:400px;
+		border:1px solid red;
+		margin:0 auto 30px;
+	}
+	div.banner_box1 ul.left{
+		width:199px;
+		border-right:1px solid black;
+		/* background-color:gray; */
+		height:100%;
+	}
+	.nav2 div.left{
+		width:200px;
+		/* height:100%; */
+		background-color:red;
+		color:white;
+		position:relative;
+	}
+	.nav2 div.left div.cartgory{
+		height:30px;
+		line-height:30px;
+		padding-left:30px;
+	}
+	.nav2 div.left div.sideBar_box{
+		position:absolute;
+		left:0;
+		top:35px;
+	}
+	/*二级菜单的ul ---相对定位*/
+	.nav2 div.left div.sideBar_box ul{
+		position:relative;
+	}
+	/*三级菜单ol  ----绝对定位*/
+	.nav2 div.left div.sideBar_box .threeSideBar{
+		position:absolute;
+		left:200px;
+		top:0;
+		background-color:green;
+		width:500px;
+		height:400px;
+		display:none;
+	}	
+	.nav2 div.left div.sideBar_box ul li:hover ol.threeSideBar{
+		display:block;
+	}	
+	.nav2 div.left ul.sideBar_menu{
+		background-color:red;
+		width:200px;
+		position:relative;
+	}
+	.nav2 div.left:hover ul.sideBar_menu{
+		/* display:block; */
+	}
+	.nav2 ul.right{
+		width:600px;
+		margin-left:20px;
+		background-color:green;
+		height:100%;
+	}
+	.banner_box2{
+		width:800px;
+		height:500px;
+		border:1px solid red;
+		margin:0 auto;
+		padding-left:200px;
+	}
+	.banner_box2 .right{
+		width:600px;
+		background-color:pink;
+		height:100%;
+		margin-left:20px;
+	}
+  </style>
+ </head>
+ <body>
+  <!--分类的格式 --流式布局+浮动布局-->
+	<nav class='nav1'>
+		<div class='left fl'>
+			全部分类
+		</div>
+		<ul class='right fl'>
+			<li><a>导航</a></li>
+		</ul>
+	</nav>
+	<div class='banner_box1'>
+		<ul class='left'>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+			<li>二级分类</li>
+		</ul>
+		<div>
+		</div>
+	</div>
+	<hr>
+  <!--分类的格式2-position-->
+
+	<nav class='nav2'>
+		<div class='left fl'><!--相对定位元素-->
+			<div class='cartgory'><a>全部分类</a></div>
+			<div class='sideBar_box'><!--绝对定位元素--找父元素相对定位-->
+				<ul class='sideBar_menu'><!--相对定位元素-跟着它亲爹走-->
+					<li>
+						<div>二级菜单</div>
+						<ol class='threeSideBar'><!--绝对定位元素---找上一个带相对定位的父元素-->
+							<li>三级菜单</li>
+							<li>三级菜单</li>
+							<li>三级菜单</li>
+							<li>三级菜单</li>
+							<li>三级菜单</li>
+						</ol>
+					</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+					<li>二级菜单</li>
+				</ul>
+			</div>
+			
+		</div>
+		<ul class='right fl'>
+			<li>
+				<a>导航</a>
+			</li>
+		</ul>
+	</nav>
+	<div class='banner_box2'>
+		<!--有一个二级菜单 占据的位置-->
+		<ul class='right'>
+			
+		</ul>
+    </div>
+ </body>
+</html>

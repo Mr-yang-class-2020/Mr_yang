@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>float</title>
+  <style>
+	.red{
+		background-color:rgba(255,0,0,1);
+	}
+	.red h1{
+		float:left;
+	}
+	.red div{
+	
+	}
+	.blue{
+		background-color:blue;
+		color:white;
+	}
+	.blue p{
+		float:left;
+	}
+	.blue::after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	/* .blue::after{
+		content:"哈哈哈，我是after伪类";
+		border:1px solid white;
+		font-weight:bold;
+	} */
+	/* .blue::before{
+		content:"哈哈哈，我是before伪类";
+		border:1px solid white;
+		font-weight:bold;
+	} */
+	.green{
+		width:500px;
+		height:300px;
+		border:1px solid black;
+	}
+	.pink{
+		width:200px;
+		height:100px;
+		background-color:pink;
+		/* margin-left:auto;
+		margin-right:auto; */
+		margin:100px auto;
+	}
+  </style>
+ </head>
+ <body>
+	<div class='red'>
+		<h1>标题</h1>
+		<div style='clear:both'></div>
+	</div>
+	
+	<div class='blue'>
+		<p>这是个蓝色的盒子</p>
+	</div>
+
+	<div class='green'>
+		<div class='pink'>
+			内部的盒子
+		</div>
+	</div>
+	
+	<div class='pink'>
+		body内部的盒子
+	</div>
+ </body>
+</html>

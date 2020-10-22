@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	/*重置属性*/
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{
+		list-style:none;
+	}
+
+
+	/*在非ie网站页面中 直接以块元素呈现
+	  在ie网站页面中。以行内元素呈现
+	  行内元素 不可以设置宽高
+	  块元素。 可以设置宽高
+	*/
+	nav#nav_box{
+		width:1000px;
+		height:50px;
+		border:1px solid red;
+		/*显示:块;  
+		预防ie用户打开页面后。nav以行内元素显示的问题
+		*/
+		display:block;
+		margin:10px auto;
+		/* margin-left:auto;
+		margin-right:auto; */
+	}
+	nav#nav_box .nav li{
+		float:left;
+		padding:0 18px;
+		line-height:30px;
+		position:relative;
+	}
+	nav#nav_box .nav li.w105{
+		padding-right:50px;
+		color:#fff;
+	}
+	nav#nav_box .nav li.r105{
+		background-color:red;
+	}
+	nav#nav_box .nav li.b105{
+		background:blue url(./images/hot_07.png) no-repeat 70px center;
+	}
+	nav#nav_box .nav li.g105{
+		background-color:green;
+	}
+	nav#nav_box .nav li .hot{
+		background:url(./images/hot_07.png) no-repeat center;
+		width:15px;
+		height:16px;
+		display:block;
+		position:absolute;
+		right:2px;
+		top:-8px;
+	}
+  </style>
+ </head>
+ <body>
+	<nav id='nav_box'>
+		<ul class='nav'>
+			<li class='w105 r105'>发现 <span>啊啊</span></li>
+			<li class='w105 b105'>比较</li>
+			<li class='w105 g105'>优惠</li>
+			<li class=''>
+				<a href=''>一淘专享</a>
+				<span class='hot'></span>
+			</li>
+			<li class=''>促销活动</li>
+			<li class=''>优惠卷</li>
+			<li class=''>积分</li>
+			<li class=''>团购</li>
+			<li class=''>返利</li>
+			<li class=''>淘淘</li>
+			<li class=''>淘吧</li>
+		</ul>
+	</nav>
+ </body>
+</html>

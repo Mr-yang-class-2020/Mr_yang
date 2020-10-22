@@ -1,0 +1,49 @@
+/*normalliz.css*/
+
+*{
+	margin:0;
+	padding:0;
+}
+/*去掉列表样式*/
+li{
+	list-style:none;
+}
+/*去掉文本修饰，更改默认a标签文字颜色*/
+a{
+	color:#fff;
+	text-decoration:none;
+}
+i,em{
+	font-style:normal;
+}
+b,strong{
+	font-weight:normal;
+}
+
+/*去掉input和button元素的外轮廓*/
+input,button{
+	outline:none;
+}
+
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+/*为了清除浮动对当前元素的父元素造成的影响*/
+.clear{
+	display:block;
+	height:0;
+	clear:both;
+}
+.w1636{
+	width:1636px;
+	margin:0 auto;
+}
+
+body{
+/* background:-webkit-linear-gradient(top ,black 0,transparent 20%,transparent 80%,black 100%); */
+	background-color:red;
+	height:500px;
+}

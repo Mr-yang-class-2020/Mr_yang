@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	ul{
+		width:306px;
+		height:100px;
+		margin:100px auto;
+	}
+	li{
+		width:100px;
+		border:1px solid red;
+		float:left;
+		list-style:none;
+		transform:skew(45deg)
+	}
+	li:hover{
+		transition:all 2s;
+		/*兼容模式*/
+		/*谷歌*/
+		-webkit-transform:;
+		/*火狐*/
+		-moz-transform:;
+		/*ie*/
+		-ms-transform:;
+		/*欧鹏*/
+		-o-transform:;
+		/*正常*/
+		/* transform:translate(x,y) scale(x,y) skew(角度,角度) rotate(±角度) matrix(); */
+		/*位移*/
+		/* transform:translate(20px,20px); */
+		/*缩放*/
+		/* transform:scale(1.2) */
+		/*倾斜 deg--->角度*/
+
+		/* transform:skew(45deg); */	
+		/*旋转  deg---->角度*/
+		/* transform:rotate(50deg); */
+
+		/*位移并倾斜 并旋转 并缩放*/
+		transform:translate(100px,100px) skew(0) rotate(50deg) scale(1.2);
+
+	}
+  </style>
+ </head>
+ <body>
+	<ul>
+		<li>
+			盒子1
+		</li>
+		<li>
+			盒子2
+		</li>
+	</ul>
+ </body>
+</html>

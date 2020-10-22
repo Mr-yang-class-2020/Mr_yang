@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>ul.html(无序列表)</title>
+ </head>
+ <body>
+	<!--
+		列表 -----上阵不利父子兵
+		ul内，有且只能存有li元素(标签)
+		li元素内可以包含其他元素(标签)
+		
+	-->
+	<ul>
+		<li>
+			<a></a>
+			<img>
+			<p></p>
+			<h1></h1>
+		</li>
+	</ul>
+ </body>
+</html>

@@ -1,0 +1,22 @@
+
+/*
+
+normalliz.css   正常的文档配置
+
+*/
+/*该css文件用于处理css重置属性*/
+
+*{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#fff;
+}
+body{
+	background-color:bl
+}

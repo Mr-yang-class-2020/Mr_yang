@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>margin-padding</title>
+  <style>
+	div{
+		width:200px;
+		height:200px;
+	}
+	.div1{
+		background-color:red;
+		border:10px solid black;
+		/* 外边距:不在存在有颜色，可以撑开多个元素之间的距离 */
+		margin-bottom:20px;
+	}
+	.div2{
+		margin-top:30px;
+		background-color:pink;
+		padding:10px;
+		border:20px solid black;
+		color:white;
+	}
+	.div4{
+		border:3px solid blue;
+		margin-top:20px;
+		width:590px;
+		height:40px;
+		line-height:40px;
+		padding-left:10px;
+		border-radius:10px;
+	}
+	div:nth-child(2n+1){
+		background-color:black;
+	}
+	input{
+		padding-left:10px;
+	}
+	input:focus{
+		background-color:red;
+	}
+	#laozhang .red{
+	
+	}
+	.red{
+		
+	}
+	#laoli .red,#laozhang .blue{
+		要结婚
+	}
+  </style>
+ </head>
+ <body>
+	<div class='div1 div3'>
+	this is a content
+	</div>
+	<div class='div2 div3'>
+		我是内容
+	</div>
+	<div class='div4'>
+	搜索
+	</div>
+
+	<input>
+
+	<a href='#' class='red'>哈哈</a>
+
+
+	<div id='laoli'>
+		<a class='red'></a>
+	</div>
+	<div id='laozhang'>
+		<p class='blue'></p>
+	</div>
+ </body>
+</html>
